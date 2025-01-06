@@ -1,196 +1,286 @@
 {
-    "editor": {
-        "defaultFormatter": "esbenp.prettier-vscode",
-        "hover.enabled": true,
-        "stickyScroll.enabled": false,
-        "minimap.enabled": true,
-        "fontFamily": "CaskaydiaCove Nerd Font"
+    // editor settings
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.hover.enabled": true,
+    "files.autoSave": "afterDelay",
+    "editor.stickyScroll.enabled": false,
+    "editor.minimap.enabled": true,
+    "editor.fontFamily": "CaskaydiaCove Nerd Font",
+
+    // background image
+    "background.enabled": true,
+    "background.useFront": false,
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "40%",
+        "height": "40%",
+        "background-position": "center",
+        "background-size": "cover",
+        "background-repeat": "no-repeat",
+        "opacity": 0.1,
+        "left": "30%",
+        "top": "10rem"
     },
-    "files": {
-        "autoSave": "afterDelay",
-        "watcherExclude": {
-            "**/node_modules/*": true,
-            "**/build/*": true,
-            "**/dist/*": true,
-            "**/.git/*": true,
-            "**/logs/*": true,
-            "**/.vscode/*": true
+    "background.customImages": [
+        "https://i.postimg.cc/LXQ42V13/vscodelow.png"
+        // "https://i.postimg.cc/GhzGQb8Y/20230207-060850.png"
+    ],
+
+    "files.watcherExclude": {
+        "**/node_modules/*": true,
+        "**/build/*": true,
+        "**/dist/*": true,
+        "**/.git/*": true,
+        "**/logs/*": true,
+        "**/.vscode/*": true
+    },
+
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/build": true,
+        "**/.git": true
+    },
+
+    // powermode
+    "powermode.enabled": false,
+    "powermode.presets": "flames",
+    "powermode.combo.counterSize": 0,
+    "powermode.shake.enabled": false,
+
+    // better comments
+    "better-comments.highlightPlainText": true,
+    "better-comments.tags": [
+        {
+            "tag": "*",
+            "color": "#000000",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#198754"
         },
-        "exclude": {
-            "**/.classpath": true,
-            "**/.project": true,
-            "**/.settings": true,
-            "**/.factorypath": true
+        {
+            "tag": "?",
+            "color": "#000000",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#FFC107"
+        },
+        {
+            "tag": "~",
+            "color": "#FFFFFF",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#6610F2"
+        },
+        {
+            "tag": "!",
+            "color": "#000000",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#DC3545"
+        },
+        {
+            "tag": "/",
+            "color": "#000000",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#00b7ffec"
+        },
+        {
+            "tag": "-1",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-2",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-3",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-4",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-5",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-6",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-7",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-8",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-9",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
+        },
+        {
+            "tag": "-10",
+            "color": "#ffffff",
+            "bold": true,
+            "strikethrough": false,
+            "backgroundColor": "#D61355"
         }
+    ],
+
+    // prettier
+    "prettier.withNodeModules": true,
+    "prettier.enableDebugLogs": true,
+    "prettier.arrowParens": "always",
+    "prettier.bracketSameLine": true,
+    "prettier.bracketSpacing": true,
+    "prettier.embeddedLanguageFormatting": "auto",
+    "prettier.htmlWhitespaceSensitivity": "ignore",
+    "prettier.insertPragma": false,
+    "prettier.jsxSingleQuote": false,
+    "prettier.proseWrap": "preserve",
+    "prettier.quoteProps": "as-needed",
+    "prettier.requirePragma": false,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "all",
+    "prettier.useTabs": false,
+    "prettier.vueIndentScriptAndStyle": false,
+    "prettier.printWidth": 125,
+
+    // terminal
+    "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+
+    // spell words
+    "cSpell.userWords": ["arif", "azmarif", "আরিফ", "cascadia", "null"],
+    "cSpell.language": "en,en-GB,en-US,en-BN",
+
+    // live share methods
+    // "liveServer.settings.CustomBrowser": "firefox",
+    // "liveServer.settings.CustomBrowser": "msedge",
+    // "liveServer.settings.CustomBrowser": "chrome",
+    // "liveServer.settings.CustomBrowser": "brave",
+    // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files\\Goog	le\\Chrome\\Application\\chrome.exe",
+    // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+
+    // auto hide
+    "autoHide.autoHideSideBar": false,
+    "autoHide.autoHidePanel": false,
+    "autoHide.sideBarDelay": 0,
+
+    // others
+    "search.seedWithNearestWord": true,
+    "json.schemaDownload.enable": true,
+    "js/ts.implicitProjectConfig.strictFunctionTypes": true,
+    "typescript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "javascript.format.placeOpenBraceOnNewLineForFunctions": true,
+    "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true,
+    "javascript.referencesCodeLens.showOnAllFunctions": true,
+    "js/ts.implicitProjectConfig.experimentalDecorators": true,
+    "js/ts.implicitProjectConfig.strictNullChecks": true,
+    "notebook.outline.showCodeCells": true,
+    "notebook.consolidatedRunButton": true,
+    "explorer.confirmDelete": false,
+    "debug.console.acceptSuggestionOnEnter": "on",
+    "debug.console.fontFamily": "'Cascadia Code'",
+    "debug.showBreakpointsInOverviewRuler": true,
+    "debug.showSubSessionsInToolBar": true,
+    "editor.parameterHints.cycle": true,
+    "javascript.inlayHints.parameterTypes.enabled": false,
+    "javascript.suggest.completeFunctionCalls": true,
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "typescript.suggest.completeFunctionCalls": true,
+    "typescript.inlayHints.parameterTypes.enabled": false,
+    "javascript.inlayHints.parameterNames.enabled": "none",
+    "javascript.autoClosingTags": true,
+    "javascript.format.enable": true,
+    "javascript.suggest.enabled": true,
+    "scss.format.enable": true,
+    "workbench.editorAssociations": {
+        "*.ico": "default"
     },
-    "background": {
-        "enabled": true,
-        "useFront": false,
-        "style": {
-            "content": "''",
-            "pointer-events": "none",
-            "position": "absolute",
-            "z-index": "99999",
-            "width": "40%",
-            "height": "40%",
-            "background-position": "center",
-            "background-size": "cover",
-            "background-repeat": "no-repeat",
-            "opacity": 0.1,
-            "left": "30%",
-            "top": "10rem"
-        },
-        "customImages": ["https://i.postimg.cc/LXQ42V13/vscodelow.png"]
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
-    "search": {
-        "exclude": {
-            "**/node_modules": true,
-            "**/dist": true,
-            "**/build": true,
-            "**/.git": true
-        },
-        "seedWithNearestWord": true
-    },
-    "powermode": {
-        "enabled": false,
-        "presets": "flames",
-        "combo.counterSize": 0,
-        "shake.enabled": false
-    },
-    "better-comments": {
-        "highlightPlainText": true,
-        "tags": [
-            { "tag": "*", "color": "#000000", "bold": true, "backgroundColor": "#198754" },
-            { "tag": "?", "color": "#000000", "bold": true, "backgroundColor": "#FFC107" },
-            { "tag": "~", "color": "#FFFFFF", "bold": true, "backgroundColor": "#6610F2" },
-            { "tag": "!", "color": "#000000", "bold": true, "backgroundColor": "#DC3545" },
-            { "tag": "/", "color": "#000000", "bold": true, "backgroundColor": "#00b7ffec" },
-            { "tag": "-1", "color": "#ffffff", "bold": true, "backgroundColor": "#D61355" }
-        ]
-    },
-    "prettier": {
-        "withNodeModules": true,
-        "enableDebugLogs": true,
-        "arrowParens": "always",
-        "bracketSameLine": true,
-        "bracketSpacing": true,
-        "embeddedLanguageFormatting": "auto",
-        "htmlWhitespaceSensitivity": "ignore",
-        "insertPragma": false,
-        "jsxSingleQuote": false,
-        "proseWrap": "preserve",
-        "quoteProps": "as-needed",
-        "requirePragma": false,
-        "semi": true,
-        "singleQuote": true,
-        "tabWidth": 4,
-        "trailingComma": "all",
-        "useTabs": false,
-        "vueIndentScriptAndStyle": false,
-        "printWidth": 125
-    },
-    "terminal": {
-        "integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
-        "integrated.defaultProfile.windows": "Git Bash",
-        "integrated.defaultProfile.linux": "zsh"
-    },
-    "cSpell": {
-        "userWords": ["arif", "azmarif", "আরিফ", "cascadia", "null"],
-        "language": "en,en-GB,en-US,en-BN"
-    },
-    "liveServer": {
-        "settings.donotShowInfoMsg": true,
-        "settings.donotVerifyTags": true,
-        "settings.ChromeDebuggingAttachment": true
-    },
-    "autoHide": {
-        "autoHideSideBar": false,
-        "autoHidePanel": false,
-        "sideBarDelay": 0
-    },
-    "notebook": {
-        "outline.showCodeCells": true,
-        "consolidatedRunButton": true
-    },
-    "explorer": {
-        "confirmDelete": false,
-        "confirmDragAndDrop": true
-    },
-    "debug": {
-        "console.acceptSuggestionOnEnter": "on",
-        "console.fontFamily": "'Cascadia Code'",
-        "showBreakpointsInOverviewRuler": true,
-        "showSubSessionsInToolBar": true
-    },
-    "workbench": {
-        "iconTheme": "vscode-icons",
-        "editorAssociations": {
-            "*.ico": "default"
-        },
-        "editor.sharedViewState": true,
-        "layoutControl.enabled": false,
-        "editor.empty.hint": "hidden",
-        "colorTheme": "Anti-Glare - Official"
-    },
-    "window": {
-        "customTitleBarVisibility": "never",
-        "menuBarVisibility": "toggle",
-        "commandCenter": true,
-        "title": "A. Z. M. Arif"
-    },
-    "typescript": {
-        "inlayHints.parameterNames.enabled": "all",
-        "suggest.completeFunctionCalls": true,
-        "inlayHints.parameterTypes.enabled": false,
-        "format.placeOpenBraceOnNewLineForFunctions": true,
-        "format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
-    },
-    "javascript": {
-        "inlayHints.parameterNames.enabled": "none",
-        "autoClosingTags": true,
-        "format.enable": true,
-        "suggest.enabled": true,
-        "updateImportsOnFileMove.enabled": "always",
-        "format.placeOpenBraceOnNewLineForFunctions": true,
-        "format.placeOpenBraceOnNewLineForControlBlocks": true
-    },
-    "eslint": {
-        "format.enable": true,
-        "debug": true,
-        "lintTask.enable": true,
-        "nodeEnv": ""
-    },
-    "json": {
-        "schemaDownload.enable": true,
-        "schemas": []
-    },
-    "code-runner": {
-        "runInTerminal": true,
-        "clearPreviousOutput": false
-    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
     "markdown.preview.typographer": true,
-    "vsicons": {
-        "presets.jsonOfficial": true,
-        "dontShowNewVersionMessage": true
-    },
-    "tabnine.experimentalAutoImports": true,
-    "emmet": {
-        "showAbbreviationSuggestions": true,
-        "showSuggestionsAsSnippets": true,
-        "triggerExpansionOnTab": true,
-        "includeLanguages": {
-            "javascript": "javascriptreact"
-        }
-    },
+    "explorer.confirmDragAndDrop": true,
+    "vsicons.presets.jsonOfficial": true,
+    "liveServer.settings.ChromeDebuggingAttachment": true,
+    "emmet.showAbbreviationSuggestions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "tailwindCSS.emmetCompletions": true,
     "html-css-class-completion.enableEmmetSupport": true,
-    "projectManager": {
-        "filterOnFullPath": true,
-        "openInNewWindowWhenClickingInStatusBar": true,
-        "showParentFolderInfoOnDuplicates": true
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
     },
-    "git": {
-        "autofetch": true,
-        "openRepositoryInParentFolders": "always"
-    },
+    "projectManager.filterOnFullPath": true,
+    "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+    "projectManager.showParentFolderInfoOnDuplicates": true,
+    "eslint.format.enable": true,
+    "eslint.debug": true,
+    "eslint.lintTask.enable": true,
+    "eslint.nodeEnv": "",
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.editor.sharedViewState": true,
+    "tabnine.experimentalAutoImports": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "json.schemas": [],
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.editor.tabActionCloseVisibility": false,
+    "window.commandCenter": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.clearPreviousOutput": false,
+    "rapidapi.terminalLink.enabled": false,
+    "workbench.colorTheme": "Anti-Glare - Official",
+    "window.customTitleBarVisibility": "auto",
+    "window.menuBarVisibility": "toggle",
+    "workbench.layoutControl.enabled": false,
     "workbench.editor.empty.hint": "hidden"
+    // "window.title": "A. Z. M. Arif",
 }
