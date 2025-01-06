@@ -1,10 +1,63 @@
 {
     "editor": {
+        "fontFamily": "'Operator-Caska', 'Cascadia Code', 'CaskaydiaCove Nerd Font', 'Fira Code', 'Droid Sans Mono', 'monospace'",
+        "fontSize": 14.5,
+        "lineHeight": 2,
+        "ursorBlinking": "expand",
+        "cursorWidth": 2,
+        "linkedEditing": true,
+        "roundedSelection": true,
+        "formatOnSave": true,
+        "mouseWheelScrollSensitivity": 2,
+        "accessibilitySupport": "off",
+        "fontLigatures": true,
+        "formatOnType": true,
+        "formatOnPaste": true,
+        "renderLineHighlight": "none",
+        "smoothScrolling": true,
+        "foldingImportsByDefault": true,
+        "cursorSmoothCaretAnimation": "on",
+        "overviewRulerBorder": false,
+        "hideCursorInOverviewRuler": true,
+        "bracketPairColorization.enabled": true,
         "defaultFormatter": "esbenp.prettier-vscode",
-        "hover.enabled": true,
-        "stickyScroll.enabled": false,
-        "minimap.enabled": true,
-        "fontFamily": "CaskaydiaCove Nerd Font"
+        "hover": {
+            "enabled": true,
+            "delay": 1000,
+            "sticky": true
+        },
+        "stickyScroll": {
+            "enabled": false
+        },
+        "minimap": {
+            "enabled": true,
+            "size": "fill",
+            "renderCharacters": true,
+            "showSlider": "always",
+            "maxColumn": 50,
+            "side": "right"
+        },
+        "find": {
+            "autoFindInSelection": "always",
+            "addExtraSpaceOnTop": false,
+            "seedSearchStringFromSelection": true,
+            "cursorMoveOnType": true
+        },
+        "scrollbar": {
+            "vertical": "auto",
+            "horizontal": "auto",
+            "useShadows": true,
+            "verticalHasArrows": false,
+            "horizontalHasArrows": false,
+            "verticalScrollbarSize": 8,
+            "horizontalScrollbarSize": 8,
+            "arrowSize": 30,
+            "scrollByPage": true
+        },
+        "parameterHints": {
+            "enabled": true,
+            "cycle": true
+        }
     },
     "files": {
         "autoSave": "afterDelay",
@@ -54,8 +107,19 @@
     "powermode": {
         "enabled": false,
         "presets": "flames",
-        "combo.counterSize": 0,
-        "shake.enabled": false
+        "combo": {
+            "keybinding": "ctrl",
+            "enabled": true,
+            "counterSize": 0
+        },
+        "explosions": {
+            "enabled": true,
+            "explosionHeight": 0,
+            "explosionWidth": 0
+        },
+        "shake": {
+            "enabled": false
+        }
     },
     "better-comments": {
         "highlightPlainText": true,
@@ -90,18 +154,60 @@
         "printWidth": 125
     },
     "terminal": {
-        "integrated.fontFamily": "CaskaydiaCove Nerd Font Mono",
-        "integrated.defaultProfile.windows": "Git Bash",
-        "integrated.defaultProfile.linux": "zsh"
+        "integrated": {
+            "fontFamily": "'CaskaydiaCove Nerd Font', 'Cascadia Code', 'Fira Code', 'Droid Sans Mono', 'monospace'",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "fontLigatures": true,
+            "cursorBlinking": true,
+            "scrollback": 10000,
+            "cursorWidth": 2,
+            "cursorStyle": "underline",
+            "lineHeight": 1.2,
+            "letterSpacing": 1,
+            "allowMnemonics": true,
+            "copyOnSelection": false,
+            "fastScrollSensitivity": 4,
+            "enableMultiLinePasteWarning": "auto",
+            "enableVisualBell": true,
+            "clear": "ctrl+l",
+            "showExitAlert": true,
+            "showOnRightClick": true,
+            "suggestOnTriggerCharacters": true,
+            "wordBasedSuggestions": true,
+            "defaultProfile": {
+                "windows": "Git Bash",
+                "osx": "zsh",
+                "linux": "zsh"
+            },
+            "shellArgs": {
+                "linux": ["-l"],
+                "osx": ["-l"],
+                "windows": ["-l"]
+            },
+            "shell": {
+                "windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "osx": "/bin/zsh",
+                "linux": "/bin/zsh"
+            }
+        },
+        "sourceControlRepositoriesKind": "both",
+        "explorerKind": "both",
+        "external": {
+            "linuxExec": "x-terminal-emulator",
+            "osxExec": "Terminal.app",
+            "windowsExec": "C:\\Windows\\System32\\cmd.exe"
+        }
     },
     "cSpell": {
         "userWords": ["arif", "azmarif", "আরিফ", "cascadia", "null"],
         "language": "en,en-GB,en-US,en-BN"
     },
     "liveServer": {
-        "settings.donotShowInfoMsg": true,
-        "settings.donotVerifyTags": true,
-        "settings.ChromeDebuggingAttachment": true
+        "settings": {
+            "donotVerifyTags": true,
+            "ChromeDebuggingAttachment": true
+        }
     },
     "autoHide": {
         "autoHideSideBar": false,
@@ -109,7 +215,9 @@
         "sideBarDelay": 0
     },
     "notebook": {
-        "outline.showCodeCells": true,
+        "outline": {
+            "showCodeCells": true
+        },
         "consolidatedRunButton": true
     },
     "explorer": {
@@ -117,63 +225,131 @@
         "confirmDragAndDrop": true
     },
     "debug": {
-        "console.acceptSuggestionOnEnter": "on",
-        "console.fontFamily": "'Cascadia Code'",
-        "showBreakpointsInOverviewRuler": true,
-        "showSubSessionsInToolBar": true
+        "console": {
+            "acceptSuggestionOnEnter": "on",
+            "fontSize": 13,
+            "fontFamily": "'CaskaydiaCove Nerd Font', 'Cascadia Code', 'Fira Code', 'Droid Sans Mono', 'monospace'",
+            "showBreakpointsInOverviewRuler": true,
+            "showSubSessionsInToolBar": true
+        }
     },
     "workbench": {
         "iconTheme": "vscode-icons",
         "editorAssociations": {
             "*.ico": "default"
         },
-        "editor.sharedViewState": true,
-        "layoutControl.enabled": false,
-        "editor.empty.hint": "hidden",
+        "editor": {
+            "sharedViewState": true,
+            "fontSize": 14.5,
+            "fontLigatures": true,
+            "lineNumbers": "on",
+            "lineNumbersMinChars": 3,
+            "renderControlCharacters": false,
+            "renderIndentGuides": true,
+            "renderLineHighlight": "all",
+            "renderWhitespace": "none",
+            "scrollBeyondLastLine": true,
+            "smoothScrolling": true,
+            "wordWrap": "on",
+            "wordWrapColumn": 80,
+            "wordWrapMinified": true,
+            "scrollbar": {
+                "vertical": "auto",
+                "horizontal": "auto"
+            },
+            "empty": {
+                "hint": "hidden"
+            }
+        },
+        "layoutControl": {
+            "enabled": false
+        },
         "colorTheme": "Anti-Glare - Official"
     },
     "window": {
         "customTitleBarVisibility": "never",
         "menuBarVisibility": "toggle",
         "commandCenter": true,
-        "title": "A. Z. M. Arif"
+        "title": "A. Z. M. Arif",
+        "confirmBeforeClose": "always"
     },
     "typescript": {
-        "inlayHints.parameterNames.enabled": "all",
-        "suggest.completeFunctionCalls": true,
-        "inlayHints.parameterTypes.enabled": false,
-        "format.placeOpenBraceOnNewLineForFunctions": true,
-        "format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true
+        "suggest": {
+            "completeFunctionCalls": true
+        },
+        "inlayHints": {
+            "parameterTypes": {
+                "enabled": false
+            },
+            "typeHints": {
+                "enabled": "all"
+            },
+            "parameterNames": {
+                "enabled": "all"
+            }
+        },
+        "format": {
+            "placeOpenBraceOnNewLineForFunctions": true
+        }
     },
     "javascript": {
-        "inlayHints.parameterNames.enabled": "none",
+        "inlayHints": {
+            "parameterNames": {
+                "enabled": "none"
+            }
+        },
         "autoClosingTags": true,
-        "format.enable": true,
-        "suggest.enabled": true,
-        "updateImportsOnFileMove.enabled": "always",
-        "format.placeOpenBraceOnNewLineForFunctions": true,
-        "format.placeOpenBraceOnNewLineForControlBlocks": true
+        "suggest": {
+            "enabled": true
+        },
+        "updateImportsOnFileMove": {
+            "enabled": "always"
+        },
+        "format": {
+            "enable": true,
+            "placeOpenBraceOnNewLineForFunctions": true
+        }
     },
     "eslint": {
-        "format.enable": true,
+        "format": {
+            "enable": true
+        },
         "debug": true,
-        "lintTask.enable": true,
+        "lintTask": {
+            "enable": true
+        },
         "nodeEnv": ""
     },
     "json": {
-        "schemaDownload.enable": true,
+        "schemaDownload": {
+            "enable": true
+        },
         "schemas": []
     },
     "code-runner": {
         "runInTerminal": true,
         "clearPreviousOutput": false
     },
-    "markdown.preview.typographer": true,
+    "markdown": {
+        "preview": {
+            "typographer": true
+        }
+    },
     "vsicons": {
-        "presets.jsonOfficial": true,
+        "presets": {
+            "jsonOfficial": true
+        },
         "dontShowNewVersionMessage": true
     },
-    "tabnine.experimentalAutoImports": true,
+    "output": {
+        "smartScroll": {
+            "enabled": true,
+            "skipFocusedEditor": true
+        }
+    },
+    "tabnine": {
+        "experimentalAutoImports": true
+    },
     "emmet": {
         "showAbbreviationSuggestions": true,
         "showSuggestionsAsSnippets": true,
@@ -182,7 +358,9 @@
             "javascript": "javascriptreact"
         }
     },
-    "html-css-class-completion.enableEmmetSupport": true,
+    "html-css-class-completion": {
+        "enableEmmetSupport": true
+    },
     "projectManager": {
         "filterOnFullPath": true,
         "openInNewWindowWhenClickingInStatusBar": true,
@@ -192,5 +370,16 @@
         "autofetch": true,
         "openRepositoryInParentFolders": "always"
     },
-    "workbench.editor.empty.hint": "hidden"
+    "accessibility": {
+        "screenReaderMode": "off",
+        "autoDetectHighContrast": true,
+        "highContrastTheme": "hc-black",
+        "sound": {
+            "terminalBell": "off"
+        }
+    },
+    "diffEditor": {
+        "wordWrap": "on",
+        "ignoreTrimWhitespace": true
+    }
 }
