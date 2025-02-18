@@ -37,12 +37,6 @@
             "maxColumn": 50,
             "side": "right"
         },
-        "find": {
-            "autoFindInSelection": "always",
-            "addExtraSpaceOnTop": false,
-            "seedSearchStringFromSelection": true,
-            "cursorMoveOnType": true
-        },
         "scrollbar": {
             "vertical": "auto",
             "horizontal": "auto",
